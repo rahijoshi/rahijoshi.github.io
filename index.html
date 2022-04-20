@@ -15,6 +15,8 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta name="author" content="True Coder">
+    <meta name="keywords" content="profile website, BITS PILANI, Rahi, Joshi, Engineer,Computer Scientist, German, Teacher, Travel, Vlog, Yoga, Yogi, Rahi Joshi, BITS, Goa, BITS Goa, BITS Pilani, Computer Science, Informatik, German, Deutsch, Deutsch lernen, Language enthusiast, portfolio, portfolio website, projects, resume">
   </head>
   <body>
     <main>
@@ -60,11 +62,14 @@
                 <!-- <li>
                   <a href="#courses">Relevant courses</a>
                 </li> -->
-                <li>
+
+
+                <!-- Keep this commented till I make a video resume -->
+                <!-- <li>
                   <a href="#videoresume">Video Resume</a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="#portfolio">Extracurriculars</a>
+                    <a href="#extracurricular">Extracurriculars</a>
                   </li>
                 <li>
                   <a href="#contactID">Contact</a>
@@ -100,7 +105,7 @@
         </div>
       </header>
 
-      <section class="about section" id="about">
+      <section class="about section_about" id="about">
         <div class="container">
           <div class="section-header">
             <h3 class="title" data-title="Who Am I" id="aboutID">About me</h3>
@@ -108,12 +113,14 @@
 
           <div class="section-body grid-2">
             <div class="column-1">
-              <h3 class="title-sm">Hello, I'm</h3>
+              <h3 class="title-sm">Hello, I'm a Rahi</h3>
               <p class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Praesentium distinctio doloribus quam? Ut, laudantium a dolore,
-                minima repudiandae iure iste molestiae exercitationem earum
-                neque tempora?
+                'Rahi' in Hindi means Traveller. I believe I capture the true essence of my name: 
+                I find it exhila(rahi)ting to see the world and everything it has to offer!
+                I'm deeply passionate about learning languages, be it C++ or German! 
+                I enjoy creating new things and solving problems. 
+                I'm very flexible, physically and mentally. 
+                I love dancing to the beats of my favorite songs and to the beats of life.
               </p>
               <div class="skills">
                 <div class="skill Flutter">
@@ -158,7 +165,7 @@
 
             <div class="column-2 image">
               <img src="./img/shapes/points4.png" class="points" alt="" />
-              <img src="./img/about.png" class="z-index" alt="" />
+              <img src="./img/aboutme_cropped.png" class="z-index" alt="" style="min-width: max-content;"/>
             </div>
           </div>
         </div>
@@ -242,11 +249,11 @@
                   <img src="./img/notetakingicon.png" class="icon" alt="" />
                   <h3 class="title-sm">Note Taker</h3>
                   <p class="text">
-                    I developed a Note Taker website using vanilla JavaScript.
+                    I developed a note-taking website using vanilla JavaScript.
                     The website allows the user to create, edit, and delete notes.
-                    The notes are stored in the local storage of the broswer and can be accessed only on that device.
+                    The notes are stored in the local storage of the browser and can be accessed only on that device.
                   </p>
-                  <a href="#" class="btn small">Read more</a>
+                  <a href="./Note Taker/index.html" target = "_blank" class="btn small">Read more</a>
                 </div>
               </div>
             </div>
@@ -255,7 +262,7 @@
         </div>
       </section>
 
-      <section class="portfolio section" id="portfolio">
+      <section class="portfolio section" id="extracurricular">
         <div class="background-bg">
           <div class="overlay overlay-sm">
             <img
@@ -288,85 +295,127 @@
           <div class="section-body">
             <div class="filter">
               <button class="filter-btn active" data-filter="*">All</button>
+              <button class="filter-btn" data-filter=".travelling">Travelling</button>
               <button class="filter-btn" data-filter=".yoga">Yoga</button>
               <button class="filter-btn" data-filter=".german">German</button>
-              <button class="filter-btn" data-filter=".travelling">Travelling</button>
-              <!-- <button class="filter-btn" data-filter=".appdev">
-                Mobile App
-              </button>
-              <button class="filter-btn" data-filter=".logo-design">
-                Logo Design
-              </button> -->
             </div>
 
-            <div class="grid">
-              <div class="grid-item travelling">
+          <!-- <div class="grid">
+              <div class="grid-item yoga">
                 <div class="gallery-image">
-                  <img src="./img/portfolio/port1.jpg" alt="" />
-                  <div class="img-overlay">
-                    <div class="plus"></div>
-                    <div class="img-description">
-                      <h3>Travelling</h3>
-                      <h5><a href="https://www.instagram.com/bevor_kiste_liste" target = "_blank">Take a look at my instagram page</a></h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item german">
-                <div class="gallery-image">
-                  <img src="./img/portfolio/port2.png" alt="" />
-                  <div class="img-overlay">
-                    <div class="plus"></div>
-                    <div class="img-description">
-                      <h3>German</h3>
-                      <h5><a href="" target = "_blank">Take a look at my German Resume</a></h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item german">
-                <div class="gallery-image">
-                  <iframe class="gallery-image" src="https://www.youtube.com/embed/Tuw8hxrFBH8?mute=1&&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="grid-item yoga german">
-                <div class="gallery-image">
-                  <img src="./img/portfolio/port3.png" alt="" />
+                  <img src="./img/yoga/natraj.jpg" alt="" />
                   <div class="img-overlay">
                     <div class="plus"></div>
                     <div class="img-description">
                       <h3>Yoga</h3>
-                      <h5><a href="https://rahijoshi22.wixsite.com/yoga" target = "_blank">See more of my Yoga photos</a></h5>
+                      <h5><a href="https://rahijoshi22.wixsite.com/yoga" target = "_blank">Take a look at my Yoga website!</a></h5>
                     </div>
                   </div>
                 </div>
               </div>
+          </div> -->
+
+          <div class="grid">
+            <div class="grid-item yoga">
+              <div class="gallery-image">
+                <img src="./img/yoga/natraj.jpg" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>Yoga</h3>
+                    <h5><a href="https://rahijoshi22.wixsite.com/yoga" target = "_blank">Take a look at my Yoga website!</a></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+
+            <div class="grid-item yoga">
+              <div class="gallery-image">
+                <h3>Yoga</h3>
+                  <img src="./img/yoga/chakrasan.jpg" alt="" />
+                </div>
+              </div>
+
               <div class="grid-item yoga">
                 <div class="gallery-image">
-                  <img src="./img/portfolio/port4.png" alt="" />
+                  <img src="./img/yoga/elbow.jpeg" alt="" />
                 </div>
               </div>
-              <div class="grid-item travelling">
+
+              <div class="grid-item yoga">
                 <div class="gallery-image">
-                  <img src="./img/portfolio/port5.jpg" alt="" />
+                  <img src="./img/yoga/nartak.jpg" alt="" />
                 </div>
               </div>
-              <div class="grid-item appdev">
+
+              <div class="grid-item yoga">
                 <div class="gallery-image">
-                  <img src="./img/portfolio/port6.jpg" alt="" />
+                  <img src="./img/yoga/vruksh2.jpeg" alt="" />
                 </div>
               </div>
-              <div class="grid-item travelling">
+        
+              <div class="grid-item yoga">
                 <div class="gallery-image">
-                  <img src="./img/portfolio/port7.jpg" alt="" />
+                  <img src="./img/yoga/handstand-04.jpeg" alt="" />
                 </div>
               </div>
-              <div class="grid-item appdev yoga">
+          </div>
+
+              <div class="grid">
+                <div class="grid-item travelling">
+                  <div class="gallery-image">
+                    <img src="./img/travel/maldives.jpeg" alt="" />
+                    <div class="img-overlay">
+                      <div class="plus"></div>
+                      <div class="img-description">
+                        <h3>Travelling</h3>
+                        <h5><a href="https://www.instagram.com/bevor_kiste_liste" target = "_blank">Take a look at my travel instagram!</a></h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid-item travelling">
+                  <div class="gallery-image">
+                    <img src="./img/travel/germany.jpg" alt="" />
+                  </div>
+                </div>
+                
+                <div class="grid-item travelling">
+                  <div class="gallery-image">
+                    <img src="./img/travel/sunflower.jpeg" alt="" />
+                  </div>
+                </div>
+
+              <div class="grid-item german">
                 <div class="gallery-image">
-                  <img src="./img/portfolio/port8.png" alt="" />
+                  <img src="./img/german/deutschfam.jpeg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>German</h3>
+                      <h5><a href=".\img\German resume.pdf" target = "_blank">Take a look at my German Resume!</a></h5>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="grid-item yoga german"> 
+              
+              <!-- tBBT -->
+              <div class="grid-item german">
+                <div class="gallery-image">
+                  <iframe class="gallery-image" src="https://www.youtube.com/embed/v1rCX_DMjgM?mute=1&&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+
+
+              <div class="grid-item german">
+                <div class="gallery-image">
+                  <iframe class="gallery-image" src="https://www.youtube.com/embed/Nm429znzaLY?mute=1&&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+              
+             
               </div>
             </div>
             <!-- <div class="more-folio">
@@ -382,8 +431,7 @@
             <div class="contact-info">
               <h3 class="title">Get in touch</h3>
               <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                rerum odio incidunt doslorum officia dolorem eaque aprim?
+                Do you want to contact me for some work or simply drop in and say hi? Send me an email!
               </p>
               <div class="information-wrap">
                 <div class="information">
@@ -395,9 +443,12 @@
 
                 <div class="information">
                   <div class="contact-icon">
-                    <i class="fas fa-paper-plane"></i>
+                    <i class="fas fa-envelope"></i>
                   </div>
-                  <p class="info-text">rahij2020@gmail.com</p>
+                  <style type="text/css">
+                    .Email:hover {text-decoration:underline;}
+                </style>
+                  <p class="info-text"><a href="mailto:rahij2020@gmail.com" class="Email" style="color: black;">rahij2020@gmail.com</a></p>
                 </div>
 
                 <div class="information">
@@ -461,7 +512,7 @@
           <div class="copyright">
             <p class="text" style="color:black">
               Copyright&copy;2022 All rights reserved | Made with ❤️
-              <span  style="color:black">by Lokesh Bolisetty</span>
+              <span  style="color:black">by Rahi Joshi</span>
             </p>
           </div>
 
