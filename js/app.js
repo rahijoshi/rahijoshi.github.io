@@ -102,7 +102,7 @@ var mySwiper = new Swiper(".swiper-container", {
 
 // typing text animation script
 var typed = new Typed(".typing", {
-  strings: ["", "a CS major", "an App Developer", "a Yogi", "a Traveller"],
+  strings: ["", "a CS major", "a Software engineer", "a Product enthusiast", "a Yogi", "a Traveller"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
